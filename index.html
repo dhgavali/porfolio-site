@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="boostrap/css/bootstrap.min.css" /> -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sacramento|Ms Madi"
+    />
+
+    <!-- boostrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/profile.css" />
+    <title>Welcome - Home page</title>
+  </head>
+  <body>
+    <div class="container-fluid" style="padding: 0">
+      <nav class="navbar navbar-expand-lg sticky-top bg-dark">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">
+              <span
+                style="
+                  font-family: 'Ms Madi', sans-serif;
+                  color: white;
+                  font-size: 2em;
+                "
+              >
+                Dhananjay Gavali
+              </span>
+            </a>
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Experience</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar ends -->
+
+      <!-- home section starts -->
+      <div class="container home" id="particles-js">
+        <div class="row">
+          <div class="col-sm col-md-4">
+            <div class="image-card">
+              <img src="assets/profile.jpg" />
+            </div>
+          </div>
+
+          <div class="myname col-sm col-md-6">
+            <h2>
+              Hi
+              <span class="wave"
+                ><img src="assets/Hand.gif" width="35px" /></span
+              >, I'm
+              <span
+                style="font-family: 'Sacramento', sans-serif; font-size: 1.5em"
+                >Dhananjay Gavali !!</span
+              >
+            </h2>
+            <div class="abt-content">
+              <h3>About Me</h3>
+              <div class="paragraph">
+                I am an IT enthusiast, Currently Studying in 3rd year of my
+                B.Tech (Information Technology). I am having high Experience in
+                large number of technologies. I am currently open for work and
+                looking for new opportunities that will boost my skills and will
+                lead me towards the path of development.
+              </div>
+
+              <!-- buttons sections -->
+              <div class="btm">
+                <a
+                  href="https://drive.google.com/file/d/1gtkYmePsu5E05d8nZQUtEY0cc_FmMsSH/view?usp=sharing"
+                  download
+                >
+                  <button class="btn btn-primary">
+                    <i class="bi bi-cloud-download"></i> Download CV
+                  </button>
+                </a>
+
+                <a
+                  href="https://drive.google.com/file/d/1gtkYmePsu5E05d8nZQUtEY0cc_FmMsSH/view?usp=sharing"
+                  download
+                >
+                  <button class="btn btn-success">
+                    <i class="bi bi-phone"></i> Contact Me
+                  </button>
+                </a>
+              </div>
+
+              <!-- JS text  -->
+              <div class="highlights">
+                <h2>
+                  I am into
+                  <span
+                    class="animated-text"
+                    style="font-weight: bold"
+                    data-words="Designing, UI/UX, Web Development, Mobile App Development,"
+                  ></span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="ss-icon">
+              <a href="#" class="fa fa-linkedin"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-whatsapp"></a>
+              <a href="#" class="fa fa-youtube"></a>
+              <!-- <a href="#" class="fa fa-facebook"></a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="skillset">
+        <div class="container justify-content-center align-items-center">
+          <div class="row me-auto">
+            <h2 id="title">Skills</h2>
+            <div class="col-6" data-aos="fade-up">
+              <h3>Languages</h3>
+              <div class="row">
+                <button class="col l1 btn btn-primary">Java</button>
+                <button class="col l1 btn btn-primary">Dart</button>
+                <button class="col l1 btn btn-primary">C++</button>
+              </div>
+              <div class="row">
+                <button class="col l1 btn btn-primary">PHP</button>
+                <button class="col l1 btn btn-primary">Python</button>
+                <button class="col l1 btn btn-primary">Javascript</button>
+              </div>
+              <div class="row">
+                <button class="col l1 btn btn-primary">C</button>
+                <button class="col l1 btn btn-primary">SQL</button>
+                <button class="col l1 btn btn-primary">HTML / CSS</button>
+              </div>
+            </div>
+            <div class="col-6" data-aos="fade-up">
+              <h3>Frameworks and Tools</h3>
+              <div class="row">
+                <button class="col l1 btn btn-success">Flutter</button>
+                <button class="col l1 btn btn-success">React</button>
+                <button class="col l1 btn btn-success">Bootstrap</button>
+              </div>
+              <div class="row">
+                <button class="col l1 btn btn-success">Android Studio</button>
+                <button class="col l1 btn btn-success">Apache Web Server</button>
+                <button class="col l1 btn btn-success">Firebase</button>
+              </div>
+              <div class="row">
+                <button class="col l1 btn btn-success">MongoDb</button>
+                <button class="col l1 btn btn-success">SQL</button>
+                <button class="col l1 btn btn-success">HTML / CSS</button>
+              </div>
+            </div>
+            <div class="col" data-aos="fade-up"></div>
+            <div class="col" data-aos="fade-up"></div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="container justify-content-center align-items-center">
+          <div class="row me-auto">
+            <h2 id="title">Projects</h2>
+            <div class="col project-box" data-aos="fade-up"></div>
+            <div class="col project-box" data-aos="fade-up"></div>
+            <div class="col project-box" data-aos="fade-up"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- scripts -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>-->
+    <script src="assets/js/animate.js"></script>
+  </body>
+</html>
