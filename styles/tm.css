@@ -1,0 +1,129 @@
+/* 
+
+body{
+  font-family: "Source Sans Pro";   
+  color: #6cacc5;
+} */
+.edu-exp{
+    color: white;
+}
+
+
+.edu-exp h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: start;
+  font-weight: 700;
+  text-align:center;
+  font-size: 40px;
+  color: #0c004d;
+}
+
+.edu-exp span {
+  color: #fd4900;
+}
+.edu-exp ul {
+  padding: 50px 0;
+}
+
+.edu-exp ul li {
+  position:relative;
+  list-style-type: none;
+  width: 6px;
+  background-color:  #0c004d;
+  margin: 0 auto;
+  padding-top: 50px;
+  
+}
+
+.edu-exp ul li::after {
+  background-color: #0c004d;
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  }
+
+
+  .edu-exp ul li div{
+  position: relative;
+  width: 400px;
+  padding: 15px;
+  border-radius: 5px;
+  
+  cursor: pointer;  
+  bottom: 0;
+  /* /* background-color:  #080037;; */
+  /* background:  linear-gradient(45deg, #0c004d, #1b02a5, #f1f1f1);  */
+  background-color: #4158D0;
+/* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+background: linear-gradient(109.6deg, rgb(43, 1, 91) 13.4%, rgb(122, 2, 54) 100.2%);
+}
+
+.edu-exp ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.edu-exp ul li:nth-child(even) div {
+  left: -445px;
+}
+
+.edu-exp time {
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.edu-exp ul li div p{
+    width: 85%;
+}
+.edu-exp ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.edu-exp ul li:nth-child(odd) div {
+  transform: translate3d(250px, 0, 0);
+}
+
+.edu-exp ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.edu-exp ul li.show div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+    .edu-exp ul li div {
+    width: 250px;
+  }
+  .edu-exp ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+
+.edu-exp ul li div:hover{
+    opacity: 0.9;
+
+}
+
+
+.edu-exp #center-row{
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+.edu-exp #center-row span{
+  color: white;
+}

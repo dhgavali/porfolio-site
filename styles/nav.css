@@ -1,0 +1,13 @@
+
+.nav-link{
+    color: var(--primary);
+    
+}
+
+.nav-link:hover{
+    color: var(--light);
+    cursor: pointer;
+    
+    transition: .2s;
+}
+

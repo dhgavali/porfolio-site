@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" light-mode="dark">
+  <head>
+    <title>Dhananjay | Projects</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/index.css" />
+
+  
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sacramento|Ms Madi"
+    />
+  
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+ 
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- lottie -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="styles/project.css" />
+
+    <!-- for navbar -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- <link rel="stylesheet" href="styles/nav.css" /> -->
+  </head>
+
+  <body class="no-scroll-preload">
+    <!-- loader -->
+    <div class="loader-container">
+      <div class="atom">
+        <div class="electron"></div>
+        <div class="electron-alpha"></div>
+        <div class="electron-omega"></div>
+      </div>
+    </div>
+
+    <div id="nav-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("nav.html");
+      });
+    </script>
+    <div class="container pt-5" style="width: 100%; min-height: 80%">
+      <!--Navigation bar-->
+
+      <section style="height: 70vh">
+        <div class="px-3 pt-5">
+          <div class="row">
+            <div class="col-md-6 godown">
+              <!-- show image here -->
+              <lottie-player
+                src="https://assets8.lottiefiles.com/packages/lf20_jtbfg2nb.json"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
+            <div
+              class="dropdown col-md-6 d-flex mt-5 flex-column text-center justify-content-center animate__animated animate__zoomIn animate__delay-1s"
+            >
+              <h2 class="main-heading mb-0 projects_head">
+                My <span class="my_projects">Projects</span>
+              </h2>
+              <p
+                class="pre-heading font-weight-bolder"
+                class="mb-0 mt-3 text-center animate__animated animate__zoomIn animate__delay-2s"
+              >
+                My projects makes use of vast variety of latest technology
+                tools. My best experience is to create Data Science projects and
+                deploy them to web applications using cloud infrastructure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="project-box" style="padding: 20px">
+      <div class="row page-content projectcards">
+        <!-- Dynamic project card -->
+        <div
+          class="card"
+          data-tilt
+          data-tilt-scale="0.95"
+          data-tilt-startY="40"
+        ></div>
+      </div>
+    </div>
+    <!-- Dynamic footer section -->
+
+    <!-- script -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

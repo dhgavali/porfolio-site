@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="skills.css">
+    <link
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    rel="stylesheet"
+  />
+
+  <script>
+    function getstars(count){
+        for(var i = 0; i<10; i++){
+            if(i<count){
+
+                document.write('<i class="fa fa-star"></i>')
+            }
+            else{
+                document.write('<i class="fa fa-star-o"></i>')
+
+            }
+        }
+    }
+  </script>
+</head>
+<body>
+    
+<div class="browser">
+	<div class="browser-content add-overflow">
+		<!-- flutter -->
+		<div id="flutter" class="row" onclick=toggleContent('#flutter')>
+			<p>
+				<i class="fab fa-flutter"></i> 
+				<span class="heading">Flutter</span>
+			</p>
+			<div class="stars">
+				<script>
+					getstars(10);
+				</script>
+			</div>
+			<div id="flutter-trigger" class="arrow">
+				<i class="fa fa-arrow-right rotate0"></i>
+			</div>
+		</div>
+			<!-- flutter Hidden Content -->
+		<div id="flutter-content" class="hidden-content item-content">
+			<p>I have been using HTML for over 5 years and I use it in all of my front-end web-based projects.</p>
+		</div>
+		<!-- HTML -->
+		<div id="html" class="row" onclick=toggleContent('#html')>
+			<p>
+				<i class="fa fa-html5"></i> 
+				<span class="heading">HTML</span>
+			</p>
+			<div class="stars">
+                  <script>
+                    getstars(10);
+                </script>
+			</div>
+			<div id="html-trigger" class="arrow">
+				<i class="fa fa-arrow-right rotate0"></i>
+			</div>
+		</div>
+		<!-- HTML Hidden Content -->
+		<div id="html-content" class="hidden-content item-content">
+			<p>I have been using HTML for over 5 years and I use it in all of my front-end web-based projects.</p>
+		</div>
+		
+		<!-- CSS -->
+		<div id="css" class="row" onclick=toggleContent('#css')>
+			<p>
+				<i class="fab fa-css3-alt"></i> 
+				<span class="heading">CSS</span>
+			</p>
+			<div class="stars">
+                <script>
+                    getstars(9);
+                </script>
+			</div>
+			<a id="css-trigger" class="arrow">
+				<i class="fa fa-arrow-right rotate0"></i>
+			</a>
+		</div>
+				<!-- CSS Hidden Content -->
+		<div id="css-content" class="hidden-content item-content">
+			<p>I use CSS in all of my front-end web-based projects to style the web pages (when I'm not using a pre-processor such as SASS).</p>
+		</div>
+		
+		<!-- JavaScript -->
+		<div id="javascript" class="row" onclick=toggleContent('#javascript')>
+			<p>
+				<i class="fab fa-js"></i> 
+				<span class="heading">JavaScript</span>
+			</p>
+			<div class="stars">
+                <script>
+                    getstars(7);
+                </script>
+			</div>
+			<div id="javascript-trigger" class="arrow">
+				<i class="fa fa-arrow-right rotate0"></i>
+			</div>
+		</div>
+			<!-- JavaScript Hidden Content -->
+		<div id="javascript-content" class="hidden-content item-content">
+			<p>I have been using HTML for over 5 years and I use it in all of my front-end web-based projects.</p>
+		</div>
+		
+		
+		
+		<!-- Node -->
+		<div id="node" class="row" onclick=toggleContent('#node')>
+			<p>
+				<i class="fab fa-node"></i> 
+				<span class="heading">NodeJS</span>
+			</p>
+			<div class="stars">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star-o"></i>
+				<i class="fa fa-star-o"></i>
+				<i class="fa fa-star-o"></i>
+				<i class="fa fa-star-o"></i>
+			</div>
+			<div id="node-trigger" class="arrow">
+				<i class="fa fa-arrow-right rotate0"></i>
+			</div>
+		</div>
+			<!-- Node Hidden Content -->
+		<div id="node-content" class="hidden-content item-content">
+			<p>I have been using HTML for over 5 years and I use it in all of my front-end web-based projects.</p>
+		</div>
+		
+		
+		
+	</div>
+</div>
+
+
+<script>
+    const hiddenClass = 'hidden-content';
+
+toggleContent = (item) => {
+	let arrow = document.querySelector(`${item}-trigger > i`);
+	arrow.classList.toggle('rotate0');
+	arrow.classList.toggle('rotate90');
+	
+	let content = document.querySelector(`${item}-content`);
+	content.classList.toggle(hiddenClass);
+}
+</script>
+</body>
+</html>

@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="styles/profile.css" />
+    <!-- <script src="boot.js"></script> -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- bootstrap -->
-    <!-- <link rel="stylesheet" href="boostrap/css/bootstrap.min.css" /> -->
-    <!-- CSS only -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <script type="text/javascript" src="styles/projects.json"></script>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Sacramento|Ms Madi"
     />
-
     <!-- boostrap icons -->
     <link
       rel="stylesheet"
@@ -33,86 +27,110 @@
     />
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/profile.css" />
+
+    <!--  jquery-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <title>Welcome - Home page</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/card.css">
+
+    <!-- css for timeline -->
+    <link rel="stylesheet" href="styles/tm.css">
+
+    <!-- css for skills -->
+    <link rel="stylesheet" href="styles/skills.css">
+
+
+     <!-- lottie -->
+     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+   
   </head>
   <body>
-    <div class="container-fluid" style="padding: 0">
-      <nav class="navbar navbar-expand-lg sticky-top bg-dark">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">
-              <span
-                style="
-                  font-family: 'Ms Madi', sans-serif;
-                  color: white;
-                  font-size: 2em;
-                "
-              >
-                Dhananjay Gavali
-              </span>
-            </a>
+    <div class="boot" id="boot"></div>
+    <div
+      class="container-fluid main"
+      id="main"
+      style="padding: 0; display: block"
+    >
+      <!-- Navigation bar -->
+      <div id="nav-placeholder"></div>
 
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
+      <script>
+        $(function () {
+          $("#nav-placeholder").load("nav.html");
+        });
+      </script>
 
-              <li class="nav-item">
-                <a class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Experience</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- navbar ends -->
+      <!--end of Navigation bar-->
 
       <!-- home section starts -->
       <div class="container home" id="particles-js">
-        <div class="row">
-          <div class="col-sm col-md-4">
-            <div class="image-card">
-              <img src="assets/profile.jpg" />
+        <div class="row g-4">
+          <div class="col-sm col-md-4 d-flex justify-content-center">
+            <div
+              class="row row-cols-md-1 justify-content-center align-items-center g-2"
+            >
+              <div
+                class="col-sm d-flex justify-content-center profile-pic image-card"
+                data-aos="flip-down"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="700"
+              >
+                <img src="assets/new.jpg" />
+              </div>
+              <div class="col-sm ss-icon d-flex justify-content-center">
+                <a
+                  href="https://www.linkedin.com/in/dhgavali"
+                  target="_blank"
+                  class="fa fa-linkedin"
+                ></a>
+                <a
+                  href="https://www.instagram.com/dhgavali"
+                  target="_blank"
+                  class="fa fa-instagram"
+                ></a>
+                <a
+                  href="https://api.whatsapp.com/send?phone=918983631618&text=Hello%2C%20I'm%20"
+                  class="fa fa-whatsapp"
+                  target="_blank"
+                ></a>
+                <a
+                  href="https://www.github.com/dhgavali/"
+                  target="_blank"
+                  class="fa fa-github"
+                ></a>
+              </div>
             </div>
           </div>
 
           <div class="myname col-sm col-md-6">
-            <h2>
-              Hi
-              <span class="wave"
-                ><img src="assets/Hand.gif" width="35px" /></span
-              >, I'm
-              <span
-                style="font-family: 'Sacramento', sans-serif; font-size: 1.5em"
-                >Dhananjay Gavali !!</span
-              >
-            </h2>
+            <div class="">
+              <h2 style="text-align: center">
+                Hi
+                <span class="wave"
+                  ><img src="assets/Hand.gif" width="35px" /></span
+                >, I'm
+                <span
+                  style="
+                    font-family: 'Sacramento', sans-serif;
+                    font-size: 1.5em;
+                  "
+                  >Dhananjay Gavali !!</span
+                >
+              </h2>
+            </div>
             <div class="abt-content">
               <h3>About Me</h3>
-              <div class="paragraph">
-                I am an IT enthusiast, Currently Studying in 3rd year of my
+              <div class="paragraph" style="font-family: monospace">
+                " I am an IT enthusiast, Currently Studying in 3rd year of my
                 B.Tech (Information Technology). I am having high Experience in
                 large number of technologies. I am currently open for work and
                 looking for new opportunities that will boost my skills and will
-                lead me towards the path of development.
+                lead me towards the path of development. "
               </div>
 
               <!-- buttons sections -->
@@ -121,7 +139,7 @@
                   href="https://drive.google.com/file/d/1gtkYmePsu5E05d8nZQUtEY0cc_FmMsSH/view?usp=sharing"
                   download
                 >
-                  <button class="btn btn-primary">
+                  <button class="btn btn-primary cv-btn">
                     <i class="bi bi-cloud-download"></i> Download CV
                   </button>
                 </a>
@@ -130,7 +148,7 @@
                   href="https://drive.google.com/file/d/1gtkYmePsu5E05d8nZQUtEY0cc_FmMsSH/view?usp=sharing"
                   download
                 >
-                  <button class="btn btn-success">
+                  <button class="btn btn-dark">
                     <i class="bi bi-phone"></i> Contact Me
                   </button>
                 </a>
@@ -143,82 +161,337 @@
                   <span
                     class="animated-text"
                     style="font-weight: bold"
-                    data-words="Designing, UI/UX, Web Development, Mobile App Development,"
+                    data-words="Designing, UI/UX, Web Development, Mobile App Development"
                   ></span>
                 </h2>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <div class="ss-icon">
-              <a href="#" class="fa fa-linkedin"></a>
-              <a href="#" class="fa fa-instagram"></a>
-              <a href="#" class="fa fa-whatsapp"></a>
-              <a href="#" class="fa fa-youtube"></a>
-              <!-- <a href="#" class="fa fa-facebook"></a> -->
-            </div>
-          </div>
-        </div>
       </div>
+     
 
-      <section id="skillset">
-        <div class="container justify-content-center align-items-center">
-          <div class="row me-auto">
-            <h2 id="title">Skills</h2>
-            <div class="col-6" data-aos="fade-up">
-              <h3>Languages</h3>
-              <div class="row">
-                <button class="col l1 btn btn-primary">Java</button>
-                <button class="col l1 btn btn-primary">Dart</button>
-                <button class="col l1 btn btn-primary">C++</button>
-              </div>
-              <div class="row">
-                <button class="col l1 btn btn-primary">PHP</button>
-                <button class="col l1 btn btn-primary">Python</button>
-                <button class="col l1 btn btn-primary">Javascript</button>
-              </div>
-              <div class="row">
-                <button class="col l1 btn btn-primary">C</button>
-                <button class="col l1 btn btn-primary">SQL</button>
-                <button class="col l1 btn btn-primary">HTML / CSS</button>
+      <section id="skillset" data-aos="fade-up" data-aos-duration="1500">
+        
+        <div class="container justify-content-between align-items-between">
+          <div class="title">
+            <h1> Skills</h1>
+          </div>  
+          <div class="row align-items-center justify-content-evenly">
+            
+            <div class="col-sm col-md-4">
+              <div class="lotie-box">
+                <lottie-player
+                src="https://assets4.lottiefiles.com/private_files/lf30_obidsi0t.json"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                loop
+                autoplay
+              ></lottie-player>
               </div>
             </div>
-            <div class="col-6" data-aos="fade-up">
-              <h3>Frameworks and Tools</h3>
-              <div class="row">
-                <button class="col l1 btn btn-success">Flutter</button>
-                <button class="col l1 btn btn-success">React</button>
-                <button class="col l1 btn btn-success">Bootstrap</button>
-              </div>
-              <div class="row">
-                <button class="col l1 btn btn-success">Android Studio</button>
-                <button class="col l1 btn btn-success">Apache Web Server</button>
-                <button class="col l1 btn btn-success">Firebase</button>
-              </div>
-              <div class="row">
-                <button class="col l1 btn btn-success">MongoDb</button>
-                <button class="col l1 btn btn-success">SQL</button>
-                <button class="col l1 btn btn-success">HTML / CSS</button>
+            <div class="col-sm col-md-6">
+              <div class="skillbox">
+                <div class="sname">
+               <span>Flutter</span>
+                  <div class="sline">
+                    <div class="flutter status"></div>
+                  </div>
+                </div>
+                <div class="sname">
+                  Firebase
+                  <div class="sline">
+                    <div class="firebase status"></div>
+                  </div>
+                </div>
+                <div class="sname">
+                  Bootstrap
+                  <div class="sline">
+                    <div class="bootstrap status"></div>
+                  </div>
+                </div>
+                <div class="sname">
+                  Java & OOP
+                  <div class="sline">
+                    <div class="java status"></div>
+                  </div>
+                </div>
+                <div class="sname">
+                  PHP
+                  <div class="sline">
+                    <div class="php status"></div>
+                  </div>
+                </div>
+                <div class="sname">
+                  MySQL
+                  <div class="sline">
+                    <div class="mysql status"></div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col" data-aos="fade-up"></div>
-            <div class="col" data-aos="fade-up"></div>
           </div>
         </div>
       </section>
+
       <section id="projects">
         <div class="container justify-content-center align-items-center">
-          <div class="row me-auto">
-            <h2 id="title">Projects</h2>
-            <div class="col project-box" data-aos="fade-up"></div>
-            <div class="col project-box" data-aos="fade-up"></div>
-            <div class="col project-box" data-aos="fade-up"></div>
+          <div class="title" data-aos="fade-up" data-aos-duration="1000">
+            <!-- <h2>Personal Projects </h2> -->
+            <h1> <span>Personal</span> Projects</h1>
+          </div>
+          <div class="row justify-content-evenly projects">
+            <script>
+              var projects = [
+                {
+                  title: "Keep Adding",
+                  github: "-",
+                  playstore: "1",
+                  link: "https://play.google.com/store/apps/details?id=com.dhenterprises.keepadding",
+                  desc: "lorem ipsum sadhflas  sdlhfasdlg hafknfaasvasas ",
+                  img: "assets/project/keep_adding.png",
+                },
+                {
+                  title: "Date time calculator",
+                  github: "-",
+                  link: "http://dhgavali.me/date-time-calculator/",
+                  playstore: "1",
+                  desc: "lorem ipsum sadhflas  sdlhfasdlg hafknfaasvasas ",
+                  img: "assets/project/calc.png",
+                },
+                {
+                  title: "online store management system",
+                  github: "-",
+                  link: "",
+                  playstore: "1",
+                  desc: "lorem ipsum sadhflas  sdlhfasdlg hafknfaasvasas ",
+                  img: "assets/project/online-shop.png",
+                },
+              ];
+              // var mydata = JSON.parse("styles/projects.json");
+              // console.log(projects[0].title);
+              var count = 5;
+              function getData(data) {
+                window.open(projects[i].link);
+              }
+              for (var i = 0; i < projects.length; i++) {
+                console.log(projects[i].img);
+                document.write(
+                  `<div class='col-md-4 project-box' onclick='getData(${this.i})' data-aos='zoom-in-up' data-aos-duration='1000' style='width: 18rem'><h4 id='project-title'> ${projects[i].title} </h4><img src='${projects[i].img}' alt='' height='100' width='100'/><div>   <a href='${projects[i].github}' target='_blank' class='fa fa-github'></a> <a href=${projects[i].link} target='_blank'> </a></div> </div>`
+                );
+              }
+            </script>
+          </div>
+          <div class="row justify-content-center align-items-center" >
+            <div class="col-sm view-all"> 
+                <h5>See All Projects</h5>
+                <a href=""> <i class="bi bi-arrow-down-circle"></i>
+                </a>
+           </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="experience" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container justify-content-center align-items-center">
+          <div class="title">
+            <h1> <span>Work </span> Experience</h1>
+          </div>
+          <div class="row">
+            <div class="col-sm col-md-6">
+              <div class="skillbox">
+                <div class="sname">
+                  Flutter
+                  <div class="sline">
+                    <div class="flutter status"></div>
+                  </div>
+                </div>
+                <div class="sname">
+                  Firebase
+                  <div class="sline">
+                    <div class="firebase status"></div>
+                  </div>
+                </div>
+                <div class="sname">
+                  Bootstrap
+                  <div class="sline">
+                    <div class="bootstrap status"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm col-md-6">
+              <div class="skillbox-2">
+                <div class="sname">
+                  Java & OOP
+                  <div class="sline">
+                    <div class="java status"></div>
+                  </div>
+                </div>
+                <div class="sname">
+                  PHP
+                  <div class="sline">
+                    <div class="php status"></div>
+                  </div>
+                </div>
+                <div class="sname">
+                  MySQL
+                  <div class="sline">
+                    <div class="mysql status"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <!-- experience section ends here -->
+
+      
+
+      <!-- achievements starts here -->
+      <section id="achievements" data-aos="fade-up">
+        <div class="container justify-content-center align-items-center">
+          <div class="title">
+            <h1> <span>Achievements</span></h1>
+          </div>
+          <div class="row">
+            <div class="col-sm col-md-6">
+              <div class="skillbox">
+                <div class="sname">
+                  Flutter
+                  <div class="sline">
+                    <div class="flutter status"></div>
+                  </div>
+                </div>
+                <div class="sname">
+                  Firebase
+                  <div class="sline">
+                    <div class="firebase status"></div>
+                  </div>
+                </div>
+                <div class="sname">
+                  Bootstrap
+                  <div class="sline">
+                    <div class="bootstrap status"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm col-md-6">
+              <div class="skillbox-2">
+                <div class="sname">
+                  Java & OOP
+                  <div class="sline">
+                    <div class="java status"></div>
+                  </div>
+                </div>
+                <div class="sname">
+                  PHP
+                  <div class="sline">
+                    <div class="php status"></div>
+                  </div>
+                </div>
+                <div class="sname">
+                  MySQL
+                  <div class="sline">
+                    <div class="mysql status"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- achievements ends here -->
+      
+
+      
+        <section class="edu-exp">
+          <h1> <span>Educational</span> Background</h1>
+          <div class="row">
+            <ul>
+              <li class="show" data-aos="fade-up" data-aos-duration="700"> 
+                <div class='edu-box' >
+                  <time>B. Tech in Information Technology</time>
+                  <p id="center-row"><span>2021 - 2024 (Present) </span>   <span><i class="bi bi-geo-alt"></i>  Pune, India</span></p> 
+                 
+                  <p>Pimpri Chinchwad College of Engineering
+        </p>
+        <p>Grade : 8.6</p>
+                </div>
+              </li>
+              <li class="show" data-aos="fade-up" data-aos-duration="700">
+                <div  >
+                  <time>Diploma in Information Technology</time>
+                  <p id="center-row"><span>2018 - 2021 </span>   <span><i class="bi bi-geo-alt"></i>  Pune, India</span></p> 
+                  
+                  <p>Pimpri Chinchwad Polytechnic
+        </p>
+        <p>Percentage : 96.6 %</p>
+                </div>
+              </li>
+              <li class="show" data-aos="fade-up" data-aos-duration="700">
+                <div>
+                  <time>SSC ( 10<sup>th</sup> ) </time>
+                  <p id="center-row"><span>2018</span>   <span><i class="bi bi-geo-alt"></i> Ahmednagar, India</span></p> 
+                  <p>New English School, Supa
+        </p>
+        <p>Percentage : 91.4 %</p>
+                </div>
+              </li>
+            
+            </ul>
+            
+          </div>
+      </section>
+      <!-- footer -->
+      <section class="footer">
+        <div class="container justify-content-center align-items-center">
+          <div class="row">
+            <h3>Dhananjay Gavali</h3>
+          </div>
+          <div class="row">
+            <div class="col-sm col-md-4 ss-icon d-flex justify-content-start">
+              <a
+                href="https://www.linkedin.com/in/dhgavali"
+                target="_blank"
+                class="fa fa-linkedin"
+              ></a>
+              <a
+                href="https://www.instagram.com/dhgavali"
+                target="_blank"
+                class="fa fa-instagram"
+              ></a>
+              <a
+                href="https://api.whatsapp.com/send?phone=918983631618&text=Hello%2C%20I'm%20"
+                class="fa fa-whatsapp"
+                target="_blank"
+              ></a>
+              <a
+                href="https://www.github.com/dhgavali/"
+                target="_blank"
+                class="fa fa-github"
+              ></a>
+            </div>
+            <div class="col-md-6" style="font-family: cursive, sans-serif">
+              "Simpler is more harder than complex.."
+            </div>
+          </div>
+          <div class="row endline justify-content-center">
+            <h6 style="color: grey;">
+              &#169 2022 dhgavali
+            </h6>
+            <h6 style="color: grey;">
+              Made with <span>&hearts;</span> by <a href="/">dhgavali</a>
+            </h6>
+          </div>
+        </div>
+      <!-- footer ends-->
     </div>
+
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
