@@ -13,6 +13,11 @@
     cursor: crosshair;
 }
 
+.row{
+  margin: 0;
+  padding: 0;
+}
+
 body{
     
 user-select: none;
