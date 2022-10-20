@@ -107,8 +107,12 @@ background: linear-gradient(109.6deg, rgb(43, 1, 91) 13.4%, rgb(122, 2, 54) 100.
     width: 250px;
   }
   .edu-exp ul li:nth-child(even) div {
-    left: -289px;
+    left: 45px;
     /*250+45-6*/
+  }
+
+  .edu-exp li{
+    left: -150px;
   }
 }
 

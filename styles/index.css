@@ -8,18 +8,19 @@
 *{
     padding: 0;
     margin: 0;
-    /* font-family:  cursive, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif; */
-    font-family:  'Muli';
-    cursor: crosshair;
+     font-family:  'Muli', sans-serif;
 }
 
+.container{
+  margin: 0;
+  padding: 0;
+}
 .row{
   margin: 0;
   padding: 0;
 }
 
 body{
-    
 user-select: none;
 background: linear-gradient(90deg, #fffbdf, #ffffff);
 /* display: ; */
@@ -100,6 +101,11 @@ section{
   }
   
 
+}
+
+.paragraph span{
+  color: #0c004d;
+  font-weight: 700;
 }
 .abt-content{
     padding: 10px;
@@ -200,52 +206,52 @@ font-weight: bold;
     font-weight: 700;
   }
 .ss-icon{
-  padding: 10px;
+  padding: 20px;
 }
-  .ss-icon a, .ss-icon a:hover{
+  .ss-icon a{
     text-decoration: none;
     margin-top: 20px;
-    padding: 10px;
-    
+    padding: 5px 10px;
   }
 
   .ss-icon a, a:hover{
     color: white;
     border-radius: 15px;
+
   }
 
-  .ss-icon
-  .fa:hover{
+  /* .ss-icon
+  .bi:hover{
     transform: translateY(-5px) scale(1.05);
     transition: .4s;
-  }
- .fa{
-    padding: 8px;
+  } */
+ .ss-icon .bi{
+  
     margin: 0 10px;
     border: 1px solid transparent;
-    font-size: 2rem;
+    font-size: 1.5rem;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.23), 0px 6px 10px rgba(0, 0, 0, 0.23);
-    background-color: black;
+    background: #060029;
+    
  }
 
- .fa:hover{
+  .bi:hover{
   color:  white;
   cursor: pointer;
  }
- .fa-linkedin{
+ .bi-linkedin:hover{
     background: #007bb5;
     color: white;
  }
 
- .fa-instagram{
+ .bi-instagram:hover{
     color: rgb(255, 255, 255);
     background-color: maroon;
  }
-
- .fa-whatsapp{
+ .bi-whatsapp:hover{
    
     background-color: green;
-    color: green;
+    color: white;
  }
 
  .project-box{
@@ -269,6 +275,10 @@ background-image: linear-gradient(45deg, #a7ffd0 0%, #fffc96 100%);
     
  }
 
+ .projects-block{
+  padding: 20px;
+
+ }
 
  #project-title{
   padding: 10px 0px;
@@ -278,6 +288,48 @@ background-image: linear-gradient(45deg, #a7ffd0 0%, #fffc96 100%);
  .project-box a{
   text-decoration: none;
   
+ }
+
+ .pro-info{
+  display: flex;
+  justify-content: center;
+
+ }
+  .btn-box{
+    display: flex;
+  padding: 10px;
+ }
+
+
+ .btn-box .skill-btn{  
+  padding: 5px 5px ;
+  margin: 4px 3px;
+  height: min-content;
+ }
+
+ .pro-links{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap column;
+  margin-left: 10px;
+ }
+
+ .pro-links a{
+  padding : 5px 10px;
+  font-size: 24px;
+  color: black;
+  
+ }
+
+ .pro-links a span{
+  font-size: 16px;
+
+ }
+ .pro-links a:hover{
+  background-color: black;
+  color: white;
+  transition: .4s;
  }
 
  .col h3{
@@ -348,8 +400,11 @@ background: linear-gradient(109.6deg, rgb(43, 1, 91) 13.4%, rgb(122, 2, 54) 100.
   }
   
  }
- .sline .mysql{
-  width: 95%;
+ .sline .python{
+  width: 75%;
+ }
+ .sline .javascript{
+  width: 25%;
  }
  .sline .firebase{
   width: 65%;
@@ -370,13 +425,78 @@ background: linear-gradient(109.6deg, rgb(43, 1, 91) 13.4%, rgb(122, 2, 54) 100.
   padding: 5px 10px;
   margin: 10px 5px;
   }
+/* skills design */
+.top-skills {
+  width: 250px;
+  height: 200px;
+  margin: 15px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid rgb(184, 184, 184);
+}
+
+.top-skills h6{
+  padding: 5px;
+}
+
+/* work experience css */
+.exp-box{
+  cursor: pointer;
+  margin-top: 40px;
+  padding: 40px 20px;
+  width: 70%;
+  height: 40%;
+  background: linear-gradient(74deg, rgba(12,0,77,1) 0%, rgba(255,255,255,1) 0%, rgba(255,238,238,1) 100%, rgba(255,202,202,1) 100%);
+  /* background-color: rgb(255, 255, 255); */
+  color: black;
+  border: 2px solid white;
+  opacity: 0.9;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.23);
+}
 
 
+.exp-box h4 small{
+  font-size: 16px;
+  opacity: .9;
+}
+
+.exp-box .intern-role h5{
+  color: var(--secondary);
+  font-weight: bolder;
+}
+
+.exp-box .intern-skills{
+  padding-top: 10px;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+
+.exp-box .time{
+  font-family: sans-serif;
+  top: -20px;
+  color: black;
+
+}
+
+.exp-box:hover{
+  transition: .4s;
+  transform: scale(1.05);
+  background: rgb(255, 215, 215);
+}
+
+  /* footeer css */
 
 
  .footer{
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   margin-bottom: 0;
   width: 100%;
   background-color: rgb(21, 21, 21);
@@ -386,14 +506,35 @@ background: linear-gradient(109.6deg, rgb(43, 1, 91) 13.4%, rgb(122, 2, 54) 100.
   color: white;
  }
 
- .footer h6 span{
+ .footer p{
+  font-family: Roboto, sans-serif;
+ }
+ .footer p span{
   color: red;
-  font-size: 26px;
+  font-size: 22px;
  }
 
- .footer .endline h6{
+ .footer a span{
+  font-size: 16px;
+ }
+
+ .footer .endline p{
   text-align: center;
   color: gainsboro;
  }
 
 
+ .footer-icons .bi{
+  margin: 10px;
+  padding: 10px;
+ }
+ .footer-icons{
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+ }
+.abt-content h3{
+  color: #060029;
+  font-family: sans-serif;
+  padding: 10px;
+}
