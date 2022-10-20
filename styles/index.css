@@ -20,6 +20,14 @@
   padding: 0;
 }
 
+.container{
+  margin: 0;
+}
+.container-fluid{
+  margin: 0;
+  right: 0;
+}
+
 body{
 user-select: none;
 background: linear-gradient(90deg, #fffbdf, #ffffff);
@@ -364,8 +372,12 @@ background-image: linear-gradient(45deg, #a7ffd0 0%, #fffc96 100%);
   margin: 30px 0;
  }
 
+ .skbox{
+  margin-top: 30px;
+ }
 
  .sline{
+  margin: 8px 0px;
   height: 15px;
   background-color: rgb(201, 201, 201);
   border-radius: 10px;
@@ -416,9 +428,7 @@ background: linear-gradient(109.6deg, rgb(43, 1, 91) 13.4%, rgb(122, 2, 54) 100.
   width: 80%;
  }
 
- .skillbox-2 .sline .status{
-  background-color: var(--primary);
- }
+
 
  
  #project-btn{
@@ -427,9 +437,9 @@ background: linear-gradient(109.6deg, rgb(43, 1, 91) 13.4%, rgb(122, 2, 54) 100.
   }
 /* skills design */
 .top-skills {
-  width: 250px;
+  width: 100%;
   height: 200px;
-  margin: 15px 15px;
+  margin: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
