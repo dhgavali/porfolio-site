@@ -254,12 +254,27 @@ font-weight: bold;
 
  .bi-instagram:hover{
     color: rgb(255, 255, 255);
-    background-color: maroon;
+    background-color: red;
  }
  .bi-whatsapp:hover{
    
-    background-color: green;
+    background-color: limegreen;
     color: white;
+ }
+ .bi-github:hover{
+   
+    background-color: black;
+    color: white;
+ }
+ .bi-envelope:hover{
+   
+    background-color: rgb(50, 50, 50);
+    color: white;
+ }
+
+ .bi-questio:hover{
+  background-color: maroon;
+  color: white;
  }
 
  .project-box{
