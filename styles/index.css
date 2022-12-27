@@ -346,9 +346,17 @@ h3 {
 
 .pro-links a span {
   font-size: 16px;
+  border-radius: 15px;
 }
 .pro-links a:hover {
-  background-color: black;
+  /* background-color: black;
+   */
+   background: linear-gradient(
+    109.6deg,
+    rgb(43, 1, 91) 13.4%,
+    rgb(122, 2, 54) 100.2%
+  );
+  border-radius: 10px;
   color: white;
   transition: 0.4s;
 }
