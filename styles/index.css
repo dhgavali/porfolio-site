@@ -220,22 +220,20 @@ h3 {
   text-decoration: none;
   margin-top: 20px;
   padding: 5px 10px;
+  border-radius: 15px;
   background-color: transparent;
-  
 }
 
-.ss-icon a img{
+.ss-icon a img {
   box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.43);
-  border-radius: 100px;
-  background: transparent;
-
+  border-radius: 10px;
 }
 
 .ss-icon a img:hover {
   /* color: white; */
   background-color: transparent;
-  transform:scale(1.1);
-  transition: .4s;
+  transform: scale(1.1);
+  transition: 0.4s;
 }
 
 /* .ss-icon
@@ -351,7 +349,7 @@ h3 {
 .pro-links a:hover {
   /* background-color: black;
    */
-   background: linear-gradient(
+  background: linear-gradient(
     109.6deg,
     rgb(43, 1, 91) 13.4%,
     rgb(122, 2, 54) 100.2%
@@ -361,7 +359,7 @@ h3 {
   transition: 0.4s;
 }
 
-#see-all-btn:hover{
+#see-all-btn:hover {
   color: black;
 }
 
@@ -397,11 +395,11 @@ section {
   margin: 30px 0;
 }
 
-.ps-box{
+.ps-box {
   margin-top: 10px;
   margin-right: 20px;
   background-color: white;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -411,18 +409,17 @@ section {
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.23);
   padding: 10px;
   color: black;
-  
 }
 
-.ps-box:hover{
+.ps-box:hover {
   cursor: pointer;
   border: 2px solid black;
-  transition: .4s;
+  transition: 0.4s;
   background-color: #f2f2f2;
   transform: translateY(-5px);
 }
 
-.ps-box a{
+.ps-box a {
   text-align: center;
   text-decoration: none;
 }
@@ -556,9 +553,7 @@ section {
   background: rgb(255, 215, 215);
 }
 
-
-.view-btn{
-  
+.view-btn {
   padding: 20px 20px;
 }
 /* footeer css */
@@ -606,8 +601,3 @@ section {
   font-family: sans-serif;
   padding: 10px;
 }
-
-
-
-
-
